@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta name="author_email" content="vikask4590@gmail.com" />
+    <title>WB Digital Solutions | Modelo de Minishop</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap"
+    />
+
+    <!-- Bootstrap CSS-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="snackbar"></div>
+    <nav
+      class="navbar navbar-expand-custom navbar-mainbg fixed-top"
+      id="navbar"
+    >
+      <a class="navbar-brand navbar-logo" href="#">Site com mini Loja</a>
+      <a href="#cart" class="checkout btn waves-effect waves-light"
+        >$<span id="amnt">0</span>:&nbsp; Carrinho</a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars text-white"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a
+              class="nav-link active-link waves-effect waves-light"
+              href="#home"
+              ><i class="fas fa-home"></i>Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link waves-effect waves-light" href="#menu">Produtos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link waves-effect waves-light" href="#contact"
+              >Contato</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link waves-effect waves-light" href="#location"
+              >Localização</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link waves-effect waves-light" href="#reviews"
+              >depoimentos</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link waves-effect waves-light" href="tel:+123456789"
+              ><i class="fas fa-phone"></i>Ligue já</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="main-container">
+      <div class="main" id="home">
+        <div class="row">
+          <div class="col-md">
+            <div class="c1">
+              <div class="main-content">
+                <h1 class="">
+                  Conheça  <br />os produtos, <br />e já envia o pedido para a Loja.
+                </h1>
+                <p>
+                  “Onde cada clique abre um mundo de possibilidades.” <br />
+                  "Seu negócio online, seu sucesso ilimitado."
+                </p>
+                <div>
+                  <a href="#cart" class="main-btn">Faça o Seu pedido</a>
+                  <a href="#menu" class="secondary-btn">Consultar Produtos</a>
+                </div>
+                <div class="top-rating">
+                  <h3>Avaliações</h3>
+                  <a href="#reviews" class="">
+                    <img src="assets/img1663068563.png" />
+                    <img src="assets/img1663068487.png" />
+                    <img src="assets/img1663068540.png" />
+                  </a>
+                  <div class="top-star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="c2">
+              <div class="img">
+                <img src="assets/img1.png" width="100%" class="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="text-center">Nossos Produtos</h2>
+      <div class="foods" id="menu">
+
+        <div class="food">
+          <div class="food-img">
+            <img src="assets/1.png" />
+          </div>
+          <div class="food-details">
+            <h3 class="food-title">Produto 1</h3>
+            <p>
+              Preço: <b>R$ <span class="food-price">29.99</span></b>
+            </p>
+            <button type="info" class="cart-infor btn-modal mb-2" >
+              Mais informações
+            </button>
+
+            <button type="submit" class="addtocart">
+              Adcionar ao Carrinho<i class="fas fa-cart-plus"></i>
+            </button>
+
+            <div class="card meu-modal" >
+              <div class="card-details">
+                <p class="text-title">Detalhes do Produtos 1</p>
+                <p class="text-body">Aqui vai mais detalhes do Produto</p>
+              </div>
+              <button class="card-button">Nome do Produto</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="food">
+          <div class="food-img">
+            <img src="assets/2.png" />
+          </div>
+          <div class="food-details">
+            <h3 class="food-title">Produto 2</h3>
+            <p>
+              Preço: <b>R$ <span class="food-price">49.99</span></b>
+            </p>
+            <button type="info" class="cart-infor btn-modal mb-2" >
+              Mais informações
+            </button>
+
+            <button type="submit" class="addtocart">
+              Adcionar ao Carrinho<i class="fas fa-cart-plus"></i>
+            </button>
+
+            <div class="card meu-modal" >
+              <div class="card-details">
+                <p class="text-title">Detalhes do Produtos 2</p>
+                <p class="text-body">Aqui vai mais detalhes do Produto</p>
+              </div>
+              <button class="card-button">Nome do Produto 2</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="food">
+          <div class="food-img">
+            <img src="assets/1.png" />
+          </div>
+          <div class="food-details">
+            <h3 class="food-title">Produto 1</h3>
+            <p>
+              Preço: <b>R$ <span class="food-price">29.99</span></b>
+            </p>
+            <button type="info" class="cart-infor btn-modal mb-2" >
+              Mais informações
+            </button>
+
+            <button type="submit" class="addtocart">
+              Adcionar ao Carrinho<i class="fas fa-cart-plus"></i>
+            </button>
+
+            <div class="card meu-modal" >
+              <div class="card-details">
+                <p class="text-title">Detalhes do Produtos 1</p>
+                <p class="text-body">Aqui vai mais detalhes do Produto</p>
+              </div>
+              <button class="card-button">Nome do Produto</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="food">
+          <div class="food-img">
+            <img src="assets/2.png" />
+          </div>
+          <div class="food-details">
+            <h3 class="food-title">Produto 2</h3>
+            <p>
+              Preço: <b>R$ <span class="food-price">49.99</span></b>
+            </p>
+            <button type="info" class="cart-infor btn-modal mb-2" >
+              Mais informações
+            </button>
+
+            <button type="submit" class="addtocart">
+              Adcionar ao Carrinho<i class="fas fa-cart-plus"></i>
+            </button>
+
+            <div class="card meu-modal" >
+              <div class="card-details">
+                <p class="text-title">Detalhes do Produtos 2</p>
+                <p class="text-body">Aqui vai mais detalhes do Produto</p>
+              </div>
+              <button class="card-button">Nome do Produto 2</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="food">
+          <div class="food-img">
+            <img src="assets/1.png" />
+          </div>
+          <div class="food-details">
+            <h3 class="food-title">Produto 1</h3>
+            <p>
+              Preço: <b>R$ <span class="food-price">29.99</span></b>
+            </p>
+            <button type="info" class="cart-infor btn-modal mb-2" >
+              Mais informações
+            </button>
+
+            <button type="submit" class="addtocart">
+              Adcionar ao Carrinho<i class="fas fa-cart-plus"></i>
+            </button>
+
+            <div class="card meu-modal" >
+              <div class="card-details">
+                <p class="text-title">Detalhes do Produtos 1</p>
+                <p class="text-body">Aqui vai mais detalhes do Produto</p>
+              </div>
+              <button class="card-button">Nome do Produto</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="food">
+          <div class="food-img">
+            <img src="assets/2.png" />
+          </div>
+          <div class="food-details">
+            <h3 class="food-title">Produto 2</h3>
+            <p>
+              Preço: <b>R$ <span class="food-price">49.99</span></b>
+            </p>
+            <button type="info" class="cart-infor btn-modal mb-2" >
+              Mais informações
+            </button>
+
+            <button type="submit" class="addtocart">
+              Adcionar ao Carrinho<i class="fas fa-cart-plus"></i>
+            </button>
+
+            <div class="card meu-modal" >
+              <div class="card-details">
+                <p class="text-title">Detalhes do Produtos 2</p>
+                <p class="text-body">Aqui vai mais detalhes do Produto</p>
+              </div>
+              <button class="card-button">Nome do Produto 2</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="food">
+          <div class="food-img">
+            <img src="assets/1.png" />
+          </div>
+          <div class="food-details">
+            <h3 class="food-title">Produto 1</h3>
+            <p>
+              Preço: <b>R$ <span class="food-price">29.99</span></b>
+            </p>
+            <button type="info" class="cart-infor btn-modal mb-2" >
+              Mais informações
+            </button>
+
+            <button type="submit" class="addtocart">
+              Adcionar ao Carrinho<i class="fas fa-cart-plus"></i>
+            </button>
+
+            <div class="card meu-modal" >
+              <div class="card-details">
+                <p class="text-title">Detalhes do Produtos 1</p>
+                <p class="text-body">Aqui vai mais detalhes do Produto</p>
+              </div>
+              <button class="card-button">Nome do Produto</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="food">
+          <div class="food-img">
+            <img src="assets/2.png" />
+          </div>
+          <div class="food-details">
+            <h3 class="food-title">Produto 2</h3>
+            <p>
+              Preço: <b>R$ <span class="food-price">49.99</span></b>
+            </p>
+            <button type="info" class="cart-infor btn-modal mb-2" >
+              Mais informações
+            </button>
+
+            <button type="submit" class="addtocart">
+              Adcionar ao Carrinho<i class="fas fa-cart-plus"></i>
+            </button>
+
+            <div class="card meu-modal" >
+              <div class="card-details">
+                <p class="text-title">Detalhes do Produtos 2</p>
+                <p class="text-body">Aqui vai mais detalhes do Produto</p>
+              </div>
+              <button class="card-button">Nome do Produto 2</button>
+            </div>
+          </div>
+        </div>
+
+        
+       
+        
+        
+      </div>
+
+      <div id="cart">
+        <div class="row">
+          <div class="col-md">
+            <div class="imgx">
+              <img src="assets/img1.png" alt="" width="100%" />
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="cart-box">
+              <h2 class="cart-heading">Seu Carrinho</h2>
+              <div id="price-data">
+                <form action="" method="post">
+                  <fieldset id="field1" style="display: block">
+                    <div class="cart-items"></div>
+                    <div class="text-center">Comprar
+                      <span
+                        id="next1"
+                        class="btn waves-effect waves-light place-order"
+                      >
+                        
+                      </span>
+                    </div>
+                  </fieldset>
+                  <fieldset id="field2" style="display: none">
+
+
+                    <div class="container form-group" id="radio-btn">
+                      <label ><input name="at" id="at-shop" type="radio" class="custom-radio" checked/> Buscar na Loja</label>
+
+                      <label><input name="at" id="at-home" type="radio" class="custom-radio"  /> entregar</label>
+                     
+                    </div>
+                    
+
+
+                
+                    <div class="form-group">
+                      <div
+                        id="repair-date"
+                        style="display: block"
+                        class="mt-2 text-left"
+                      >
+                        <label for="repairDate">Dia e Horário</label>
+                        <input
+                          type="datetime-local"
+                          class="form-control"
+                          name="repairDate"
+                          id="date"
+                        />
+                      </div>
+                      <div
+                        id="repair-address"
+                        style="display: none"
+                        class="text-left mt-3"
+                      >
+                        <label for="repairAddress" class="active"
+                          >endereço :</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="raddr"
+                          placeholder="Enter your address"
+                          name="repairAddress"
+                        />
+                      </div>
+                    </div>
+                    <div class="text-center">
+                      <span
+                        id="previous1"
+                        class="btn place-order waves-effect waves-light"
+                      >
+                        Voltar
+                      </span>
+                      <span
+                        id="next2"
+                        class="btn place-order waves-effect waves-light"
+                      >
+                        Prosseguir
+                      </span>
+                    </div>
+                  </fieldset>
+                  <fieldset id="field3" style="display: none">
+                    <div>
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          placeholder="Seu nome"
+                          name="name"
+                          class="form-control"
+                          id="name"
+                          required=""
+                        />
+                      </div>
+                      <div class="form-group">
+                        <input
+                          type="email"
+                          class="form-control"
+                          name="email"
+                          placeholder="Seu email"
+                          id="email"
+                          required=""
+                        />
+                      </div>
+                      <div class="form-group">
+                        <input
+                          type="tel"
+                          name="mobno"
+                          placeholder="Seu telefone"
+                          class="form-control"
+                          id="mobno"
+                          required=""
+                        />
+                      </div>
+                      <div class="form-group">
+                        <textarea
+                          name="msg"
+                          id="msg"
+                          rows="3"
+                          class="form-control"
+                          placeholder="Your message"
+                          required=""
+                        ></textarea>
+                      </div>
+                      <input type="hidden" name="item" id="allitems" />
+                      <input type="hidden" name="amount" id="totalAmount" />
+                      <div class="text-center">
+                        <span
+                          id="previous2"
+                          class="btn place-order waves-effect waves-light"
+                        >
+                          Voltar
+                        </span>
+                        <span
+                          class="waves-input-wrapper waves-effect waves-light"
+                          ><input
+                            id="finalizar-compra"
+                            type="submit"
+                            name="contact"
+                            class="btn place-order"
+                            value="Finalizar Compra"
+                        /></span>
+                      </div>
+                    </div>
+                  </fieldset>
+                </form>
+                <div class="cart-total">
+                  <strong class="cart-total-title">Total :</strong>
+                  <span class="cart-total-price" id="total_price">R$0</span>
+                </div>
+                <form
+                  action=""
+                  method="post"
+                  data-component-paypal=""
+                  style="padding: 0px; min-height: fit-content; height: auto"
+                  class="changed"
+                >
+                  <!-- Identify your business so that you can collect the payments. -->
+                  <input type="hidden" name="business" value="i@fws.com" />
+
+                  <!-- Specify a Donate button. -->
+                  <input type="hidden" name="cmd" value="_donations" />
+
+                  <!-- Specify details about the contribution -->
+                  <input type="hidden" name="item_name" value="ParacleteJs" />
+                  <input type="hidden" name="item_number" value="Support" />
+                  <input type="hidden" name="currency_code" value="USD" />
+                  <input type="hidden" name="amount" value="0" id="price" />
+                  <div class="text-center">
+                    <button
+                      class="btn btn-primary waves-effect waves-light"
+                      type="submit"
+                      onclick="purchaseClicked()"
+                    >
+                      enviar Pedido
+                    </button>
+                  </div>
+                  <input type="hidden" name="user_email" />
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="reviews-container" id="reviews">
+        <h3>Depoimentos</h3>
+        <div class="reviews">
+          <div class="review">
+            <i class="fas fa-quote-right"></i>
+            <img src="assets/img1663068563.png" alt="" />
+            <h5>Ronaldo</h5>
+            <p class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </p>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non
+              doloremque dolore voluptate veritatis corrupti officia provident
+              saepe ipsam fugiat, ad, tenetur error labore! Inventore, laborum
+              expedita quidem recusandae ullam nemo!
+            </p>
+          </div>
+          <div class="review">
+            <i class="fas fa-quote-right"></i>
+            <img src="assets/img1663068487.png" alt="" />
+            <h5>Marcia</h5>
+            <p class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Exercitationem ipsa eveniet tenetur minus laborum voluptatibus
+              recusandae repellendus laboriosam consequuntur beatae, corporis
+              unde est, perspiciatis a nam at numquam, aliquid qui.
+            </p>
+          </div>
+          <div class="review">
+            <i class="fas fa-quote-right"></i>
+            <img src="assets/img1663068540.png" alt="" />
+            <h5>Cristina</h5>
+            <p class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi
+              modi dolor consectetur, exercitationem, autem obcaecati fugiat
+              provident dolore voluptas fuga repudiandae accusantium. Id modi
+              laborum repellat veritatis quae numquam unde.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="about mt-0" id="about">
+        <div class="row  mt-0 align-items-center">
+          <div class="col-md">
+            <div class="x1 img">
+              <img src="assets/img1.png" alt="" width="100%" />
+            </div>
+          </div>
+          <div class="col-md  about-box">
+            <div class="x2">
+              <h3 class="text-center">Sobre nós</h3>
+              <p class="text-center pd-5">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Molestiae qui quae explicabo perferendis consectetur laborum
+                accusantium doloremque, similique sit ipsum.
+              </p>
+              <h4 class="text-center">Porque as pessoas gostam</h4>
+              <div class="row">
+                <div class="col-lg">
+                  <div>
+                    <h6><i class="fas fa-check"></i> Melhor Preço</h6>
+                  </div>
+                  <div>
+                    <h6><i class="fas fa-check"></i> Melhor Serviço</h6>
+                  </div>
+                  <div>
+                    <h6><i class="fas fa-check"></i> Alta Qualidade</h6>
+                  </div>
+                </div>
+                <div class="col-lg">
+                  <div>
+                    <h6><i class="fas fa-check"></i> estoque disponivel</h6>
+                  </div>
+                  <div>
+                    <h6><i class="fas fa-check"></i> entrega rápida</h6>
+                  </div>
+                  <div>
+                    <h6><i class="fas fa-check"></i> Garantia</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="services">
+        <div class="service">
+          <i class="fas fa-hamburger"></i>
+          <h3>Melhor Qualidade</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Asperiores, assumenda.
+          </p>
+        </div>
+        <div class="service">
+          <i class="fas fa-shipping-fast"></i>
+          <h3>entrega rápida</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Asperiores, assumenda.
+          </p>
+        </div>
+        <div class="service">
+          <i class="fas fa-headset"></i>
+          <h3>Suporte</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Asperiores, assumenda.
+          </p>
+        </div>
+      </div>
+      <div id="contact" class="contact">
+        <div class="row">
+          <div class="col-md f1">
+            <form action="" method="post" class="contact-form">
+              <h3 class="text-center">Contate agora</h3>
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="name"
+                  placeholder="Nome"
+                  required=""
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  name="email"
+                  placeholder="Email"
+                  required=""
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="tel"
+                  class="form-control"
+                  name="mobno"
+                  placeholder="numero do celular"
+                  required=""
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  name="msg"
+                  id="msg"
+                  rows="3"
+                  placeholder="Sua mensagem"
+                  class="form-control"
+                  required=""
+                ></textarea>
+              </div>
+              <div class="form-group mt-3">
+                <button
+                  type="submit"
+                  class="btn btn-block btn-x waves-effect waves-light"
+                  name="contact"
+                  style="width: 100%"
+                >
+                  enviar
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="col-md">
+            <div id="location">
+              <iframe
+                frameborder="0"
+                src="https://maps.google.com/maps?z=1&amp;t=q&amp;output=embed"
+                style="width: 100%; height: 100%; border-radius: 10px"
+              ></iframe>
+              <div class="map-title">
+                <h3>São Paulo</h3>
+                <p>
+                  <b>endereço </b> Lorem ipsum dolor, sit amet consectetur
+                  adipisicing elit. Voluptatum, a?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer-section">
+        <div class="container">
+          <div class="footer-cta pt-5 pb-5">
+            <div class="row">
+              <div class="col-xl-4 col-md-4 mb-30">
+                <div class="single-cta">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <div class="cta-text">
+                    <h4>Onde estamos</h4>
+                    <span>São Paulo</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-md-4 mb-30">
+                <div class="single-cta">
+                  <i class="fas fa-phone"></i>
+                  <div class="cta-text">
+                    <h4><a href="tel:+123456789">Ligue agora</a></h4>
+                    <span>+123456789</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-md-4 mb-30">
+                <div class="single-cta">
+                  <i class="far fa-envelope-open"></i>
+                  <div class="cta-text">
+                    <h4>e-mail</h4>
+                    <span>mail@info.com</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-content pt-5 pb-5">
+            <div class="row">
+              <div class="col-xl-4 col-lg-4 mb-50">
+                <div class="footer-widget">
+                  <div class="footer-logo">
+                    <a href="#home"><h2>WB Digital Solutions</h2></a>
+                  </div>
+                  <div class="footer-text">
+                    <p>
+                      Lorem ipsum dolor sit amet, consec tetur adipisicing elit,
+                      sed do eiusmod tempor incididuntut consec tetur
+                      adipisicing elit,Lorem ipsum dolor sit amet.
+                    </p>
+                  </div>
+                  <div class="footer-social-icon">
+                    <span>Siga nos</span>
+                    <a href="#"
+                      ><i class="fab fa-facebook-f facebook-bg"></i
+                    ></a>
+                    <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                    <a href="#"><i class="fab fa-linkedin facebook-bg"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                <div class="footer-widget">
+                  <div class="footer-widget-heading">
+                    <h3>Links</h3>
+                  </div>
+                  <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sobre nós</a></li>
+                    <li><a href="#">Comprar</a></li>
+                    
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                <div class="footer-widget">
+                  <div class="footer-widget-heading">
+                    <h3>newsletter</h3>
+                  </div>
+                  <div class="footer-text mb-25">
+                    <p>
+                     Assine a nossa newsletter para receber novidades
+                    </p>
+                  </div>
+                  <div class="subscribe-form">
+                    <form action="" method="post">
+                      <input
+                        type="email"
+                        name="email"
+                        placeholder="Email "
+                      />
+                      <button type="submit" name="subscribe">
+                        <i class="fab fa-telegram-plane"></i>
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright-area">
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                <div class="copyright-text">
+                  <p>
+                    Copyright © 2022, All Right Reserved
+                    <a href="#">Restaurant</a>
+                  </p>
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                <div class="footer-menu">
+                  <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Policy</a></li>
+                    <li><a href="#">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
