@@ -36,19 +36,15 @@ function showToast(msg) {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  $(".navbar-toggler").click(function () {
-    $(".navbar-collapse").slideToggle(300);
-  });
-
-  jQuery(document).ready(function ($) {
-    var path = window.location.pathname.split("/").pop();
-    if (path == "") {
-      path = "index.html";
-    }
-    var target = $('#navbarSupportedContent ul li a[href="' + path + '"]');
-    target.parent().addClass("active");
+  const currentPath = window.location.pathname.split("/").pop() || "index.html";
+  const navLinks = document.querySelectorAll('#navbarSupportedContent ul li a');
+  navLinks.forEach(link => {
+      if (link.href.includes(currentPath)) {
+          link.parentElement.classList.add("active");
+      }
   });
 });
+
 
 const next1 = document.getElementById("next1");
 const field1 = document.getElementById("field1");
