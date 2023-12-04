@@ -617,6 +617,18 @@ tr {
   cursor: pointer;
   margin-right: 20px;
 }
+
+.flatpickr-time {
+  font-size: 1.2 rem; /* Aumenta o tamanho da fonte */
+  background-color: #fff; /* Muda a cor de fundo se necessário */
+}
+
+.flatpickr-time {
+  display: flex; /* Utiliza flexbox para organizar os elementos */
+  justify-content: center; /* Centraliza os elementos horizontalmente */
+  padding: 10px; /* Adiciona um pouco de padding para espaço */
+}
+
 .checkout {
   padding: 5px 10px;
   border-radius: 5px;
@@ -625,6 +637,10 @@ tr {
 }
 .cart-item-title {
   font-weight: 700;
+}
+
+.form-control-color {
+  color: #350545 !important;
 }
 .cart-total {
   text-align: right;
@@ -643,6 +659,29 @@ tr {
 .form-group {
   margin: 10px;
 }
+
+#date {
+  width: 100%; /* Ajusta para a largura total do contêiner pai */
+  padding: 10px; /* Aumenta o padding para uma aparência maior */
+  border-radius: 5px; /* Bordas arredondadas */
+  border: 1px solid #ccc; /* Borda mais estilizada */
+  font-size: 1rem; /* Tamanho da fonte maior */
+}
+#date::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.fa-calendar-alt {
+  font-size: 2.5rem; /* Ajuste o tamanho aqui */
+  /* Outros ajustes de estilo, se necessário */
+  color: #350545; /* Cor do ícone */
+}
+
+#repair-date {
+  position: relative;
+  /* Resto do seu CSS */
+}
+
 .btn-x {
   background: var(--nav);
   color: #fff;

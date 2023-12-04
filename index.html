@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <link rel="icon" href="assets/img/favicon.png">
+
     <meta name="author_email" content="vikask4590@gmail.com" />
+
+    
     <title>WB Digital Solutions | Modelo de Minishop</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
     <!-- Google Fonts -->
@@ -14,8 +18,8 @@
       
     />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@700&display=swap" rel="stylesheet">
 
     <!-- Bootstrap CSS-->
     <link
@@ -29,7 +33,11 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      
     />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css" />
@@ -40,12 +48,17 @@
       class="navbar navbar-expand-custom navbar-mainbg fixed-top"
       id="navbar"
     >
-      <a class="navbar-brand navbar-logo" href="#">Site com mini Loja</a>
-      <a href="#cart" class="checkout btn waves-effect waves-light" style="padding: 0 20px; text-align: center; "
-        >$<span id="amnt">0</span>:&nbsp; Carrinho</a
+
+    
+      <a href="index.html"><img src="/assets/logo2.png" alt="img"></a>
+    
+      
+
+      <a href="#cart" class="checkout btn waves-effect waves-light" style="padding: 0 20px; text-align: center; margin-left: 20px;"
+        >$<span id="amnt" style="padding: 10px 20px; text-align: center; ">0</span>:&nbsp; Carrinho</a
       >
       <button
-        class="navbar-toggler"
+        class="navbar-toggler d-f"
         type="button"
         aria-controls="navbarSupportedContent"
         aria-expanded="false"
@@ -77,7 +90,7 @@
           </li>
           <li class="nav-item">
             <a class="nav-link waves-effect waves-light" href="#reviews"
-              >depoimentos</a
+              >Depoimentos</a
             >
           </li>
           <li class="nav-item">
@@ -94,9 +107,10 @@
           <div class="col-md">
             <div class="c1">
               <div class="main-content">
-                <h1 class="">
+                <h1>WB Land 4 <br> Loja Online</h1>
+                <span class="">
                   com esse site você apresenta <br />os produtos, <br />e já envia o pedido para a Loja por Whatsapp!
-                </h1>
+                </span>
                 <p>
                   “Onde cada clique abre um mundo de possibilidades.” <br />
                   "Seu negócio online, seu sucesso ilimitado." <br>
@@ -402,10 +416,11 @@
                         <label for="repairDate">Dia e Horário</label>
                         <input
                           type="datetime-local"
-                          class="form-control"
+                          class="form-control-color "
                           name="repairDate"
                           id="date"
                         />
+                        <i class="fas fa-calendar-alt" style="position: absolute; right: 10px; top: 35px; cursor: pointer;"></i>
                       </div>
                       <div
                         id="repair-address"
@@ -489,6 +504,7 @@
                         <span
                           id="previous2"
                           class="btn place-order waves-effect waves-light"
+                          style="padding: 0 20px; text-align: center; "
                         >
                           Voltar
                         </span>
@@ -498,8 +514,9 @@
                             id="finalizar-compra"
                             type="submit"
                             name="contact"
-                            class="btn place-order"
+                            class="btn waves-effect waves-light"
                             value="Finalizar Compra"
+                            style="padding: 0 20px; text-align: center; "
                         /></span>
                       </div>
                     </div>
@@ -849,7 +866,7 @@
                 <div class="copyright-text">
                   <p>
                     Copyright © 2022, All Right Reserved
-                    <a href="#">Restaurant</a>
+                    <a href="#">WB Digital Solutions</a>
                   </p>
                 </div>
               </div>
@@ -880,6 +897,8 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 
     <script src="script.js"></script>
   </body>

@@ -236,7 +236,7 @@ function updateCartTotal() {
   }
   total = Math.round(total * 100) / 100;
   document.getElementsByClassName("cart-total-price")[0].innerText =
-    "$" + total;
+    "R$" + total;
   document.getElementById("price").value = total;
   document.getElementById("amnt").textContent = total;
 }
@@ -305,9 +305,45 @@ function formatarMensagemWhatsApp() {
 }
 
 
+
+
 document.getElementById("finalizar-compra").addEventListener("click", function(event) {
   event.preventDefault();
+
+
+  let nome = document.getElementById('name').value;
+  let telefone = document.getElementById('mobno').value;
+
+  if (!nome) {
+    document.getElementById('name').style.border = '2px solid red';
+} else {
+    document.getElementById('name').style.border = '';
+}
+
+if (!telefone) {
+    document.getElementById('mobno').style.border = '2px solid red';
+} else {
+    document.getElementById('mobno').style.border = '';
+}
+
+  if (!nome || !telefone) {
+    alert("Por favor, preencha todos os campos obrigatórios.");
+    return;
+}
+
   let mensagem = formatarMensagemWhatsApp();
   let whatsappUrl = `https://wa.me/5511982864581?text=${encodeURIComponent(mensagem)}`;
   window.open(whatsappUrl, '_blank');
+});
+
+document.querySelector('.fa-calendar-alt').addEventListener('click', function() {
+  document.getElementById('date').focus();
+});
+document.addEventListener('DOMContentLoaded', function() {
+  flatpickr("#date", {
+      enableTime: true,
+      dateFormat: "d/m/Y H:i",
+      "locale": "pt" ,
+      position: "auto center",
+  });
 });
