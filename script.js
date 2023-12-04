@@ -207,8 +207,8 @@ function addItemToCart(title, price, imageSrc) {
           </div>
       </div>
       <div class="cart-quantity cart-column">
-          <div class='d-flex'><span class='minus' onclick='minusQuantity()'>-</span><input class="cart-quantity-input" type="number" value="1"><span class='plus' onclick='plusQuantity()'>+</span></div>
-          <button class="btn remove-btn" type="button">Remover</button>
+          <div class='d-flex' style="max-width:160px;"><span class='minus' onclick='minusQuantity()'>-</span><input class="cart-quantity-input" type="number" value="1"><span class='plus' onclick='plusQuantity()'>+</span></div>
+          <button class="btn remove-btn" type="button" style="padding: 0 20px; text-align: center; color: red; ">Remover</button>
       </div>`;
   cartRow.innerHTML = cartRowContents;
   cartItems.append(cartRow);

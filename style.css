@@ -110,12 +110,12 @@ body {
   padding: 4rem 2rem;
 }
 .main-content h1 {
-  font-family: 'Allerta Stencil', sans-serif;
+  font-family: 'Ubuntu Mono', sans-serif;
   font-size: 5vw;
   font-weight: 700;
   text-transform: uppercase;
-  color: #000000;
-  text-shadow: 3px 3px 5px #fff, -3px -3px 5px rgba(0, 0, 0, 0.6);
+  color: #350545;
+  text-shadow: 3px 3px 5px #fff, -3px -3px 5px rgba(0, 0, 0, 0.3);
 }
 .main-content p {
   color: #792990;
@@ -146,7 +146,7 @@ body {
 }
 .main-btn {
   text-decoration: none;
-  background: black;
+  background: #350545;
   color: #fff;
   padding: 7px 15px;
   border: 2px solid black;
@@ -595,9 +595,10 @@ tr {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  margin-right: 10px;
 }
 .cart-quantity-input {
-  width: 50px;
+  width: 30px;
   margin-left: 5px;
   margin-right: 5px;
   text-align: center;
@@ -614,6 +615,7 @@ tr {
   vertical-align: middle;
   text-align: center;
   cursor: pointer;
+  margin-right: 20px;
 }
 .checkout {
   padding: 5px 10px;
@@ -644,16 +646,14 @@ tr {
 .btn-x {
   background: var(--nav);
   color: #fff;
+  text-align: center;
+  padding: 0 10px;
 }
 .btn-x:hover {
   background: #350545;
   color: #fff;
 }
-.place-order {
-  background: #ffb937;
-  color: #fff;
-  margin-top: 10px;
-}
+
 .place-order:hover {
   opacity: 0.9;
   color: #ccc;
@@ -900,7 +900,7 @@ tr {
   position: absolute;
   height: calc(var(--s) / 2);
   left: calc(var(--s) / 4 + var(--_x, 0px));
-  top: calc(var(--s) / 4);
+  top: calc(var(--s) / 4 - 5px);
   background: var(--c);
   border-radius: 50%;
   aspect-ratio: 1;
@@ -912,6 +912,7 @@ tr {
   align-items: center;
   gap: 10px;
   cursor: pointer;
+  margin-left: 20px;
 }
 .container input {
   height: var(--s);
@@ -925,7 +926,7 @@ tr {
   appearance: none;
   cursor: pointer;
   font-size: inherit;
-  margin: 0;
+  margin-left: 20px;
   transition: 0.3s;
 }
 .container input:checked {
@@ -959,6 +960,15 @@ tr {
   --_i: 4;
   --_x: 0.1px;
 }
+
+.container:has(label:nth-child(1) input:checked) label:nth-child(1),
+.container:has(label:nth-child(2) input:checked) label:nth-child(2),
+.container:has(label:nth-child(3) input:checked) label:nth-child(3),
+.container:has(label:nth-child(4) input:checked) label:nth-child(4),
+.container:has(label:nth-child(5) input:checked) label:nth-child(5) {
+  color: #792990; /* Substitua corDesejada pela cor que você deseja */
+}
+
 /* and so on ..*/
 
 .container input:disabled {
@@ -982,4 +992,53 @@ tr {
     --_c: var(--c);
     background: var(--c) content-box;
   }
+}
+
+.btn {
+  font-size: 17px;
+  background: transparent;
+  border: none;
+  padding: 1em 1.5em;
+  color: #ffb937;
+  text-transform: uppercase;
+  position: relative;
+  transition: 0.5s ease;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: #ffc506;
+  transition: 0.5s ease;
+}
+
+.btn:hover {
+  color: #1e1e2b;
+  transition-delay: 0.5s;
+}
+
+.btn:hover::before {
+  width: 100%;
+}
+
+.btn::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 0;
+  width: 100%;
+  background-color: #ffc506;
+  transition: 0.4s ease;
+  z-index: -1;
+}
+
+.btn:hover::after {
+  height: 100%;
+  transition-delay: 0.4s;
+  color: aliceblue;
 }
