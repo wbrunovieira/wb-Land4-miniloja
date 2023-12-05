@@ -35,15 +35,18 @@ function showToast(msg) {
   }, 2000);
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-  const currentPath = window.location.pathname.split("/").pop() || "index.html";
-  const navLinks = document.querySelectorAll('#navbarSupportedContent ul li a');
-  navLinks.forEach(link => {
-      if (link.href.includes(currentPath)) {
-          link.parentElement.classList.add("active");
+document.addEventListener("DOMContentLoaded", function() {
+  
+  document.querySelectorAll('.nav-link').forEach(function(element) {
+    element.addEventListener('click', function() {
+      let btn = document.querySelector('.navbar-toggler');
+      if (!btn.classList.contains('collapsed')) {
+        btn.click();
       }
+    });
   });
 });
+
 
 
 const next1 = document.getElementById("next1");

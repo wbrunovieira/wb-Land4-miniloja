@@ -6,7 +6,7 @@
 
     <link rel="icon" href="assets/img/favicon.png">
 
-    <meta name="author_email" content="vikask4590@gmail.com" />
+    <meta name="author_email" content="bruno@wbdigitalsolutions.com" />
 
     
     <title>WB Digital Solutions | Modelo de Minishop</title>
@@ -47,14 +47,70 @@
   <body>
     <div id="snackbar"></div>
 
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
+        <nav class="navbar navbar-expand-lg navbar-expand-custom " >
+          <div class="container-fluid">
+            <a class="navbar-brand " href="index.html"><img src="/assets/logo2.png" alt="img"></a>
           
-          <nav
+
+          <a href="#cart" class="checkout btn ms-2 ms-md-3 p-2">
+            $<span id="amnt" class="px-2">0</span>:&nbsp; Carrinho
+          </a>
+          
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active-link "
+                    href="#home"
+                    ><i class="fas fa-home md-5"></i>Home</a
+                  >
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link " href="#menu">Produtos</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link " href="#contact"
+                    >Contato</a
+                  >
+                </li>
+              
+                
+
+                <li class="nav-item">
+                  <a class="nav-link " href="#location"
+                    >Localização</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="#reviews"
+                    >Depoimentos</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="tel:+123456789"
+                    ><i class="fas fa-phone"></i>Ligue já</a
+                  >
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+        </nav>
+    
+          
+          <!-- <nav
             class="collapse navbar-collapse navbar navbar-expand-custom navbar-mainbg fixed-top"
             id="navbarSupportedContent"
           >
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
+            <span class="navbar-toggler-icon"></span>
+          </button>
           
             <a href="index.html"><img src="/assets/logo2.png" alt="img"></a>
           
@@ -66,6 +122,7 @@
            
               <i class="fas fa-bars text-white"></i>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
@@ -100,7 +157,7 @@
                 </li>
               </ul>
             </div>
-          </nav>
+          </nav> -->
 
     <div class="main-container">
       <div class="main" id="home">
@@ -888,11 +945,7 @@
       </footer>
     </div>
 
-    <script
-      src="https://code.jquery.com/jquery-3.7.1.min.js"
-      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-      crossorigin="anonymous"
-    ></script>
+   
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
