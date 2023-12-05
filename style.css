@@ -6,6 +6,7 @@
   --nav-link-hover: rgba(255, 185, 55, 0.7);
   --text: #fff;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -26,6 +27,12 @@ body {
 }
 .navbar {
   background: var(--nav);
+
+  position: fixed; /* Fixa a barra de navegação */
+  top: 0; /* Alinha a barra de navegação com o topo da página */
+  left: 0; /* Alinha a barra de navegação com o lado esquerdo da página */
+  width: 100%; /* Faz a barra de navegação estender-se por toda a largura da tela */
+  z-index: 1000; /* Garante que a barra de navegação fique acima de outros elementos */
 }
 
 .navbar-logo {
@@ -154,6 +161,36 @@ body {
   .nav-link {
     margin-right: 5px;
     color: #792990;
+    background-color: ;
+  }
+
+  .nav-link:hover {
+    color: #792990; /* Cor do texto no hover */
+    background-color: #f0f0f0;
+  }
+  .nav-item {
+    list-style-type: none; /* Remove marcadores de lista */
+    padding: -20px; /* Adiciona um pouco de preenchimento */
+    /* Espaçamento vertical entre os itens */
+    text-align: right;
+    background-color: rgba(121, 41, 144, 0.3);
+
+    width: 50%;
+    margin-left: auto;
+  }
+
+  .nav-link {
+    margin-top: 1px;
+
+    padding: 2px 2px;
+
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: #333; /* Cor do texto dos links */
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: bold; /* Peso da fonte */
+    transition: color 0.3s;
+    display: flex; /* Habilita o Flexbox no contêiner */
+    justify-content: flex-end;
   }
   .nav-link i {
     margin-right: 5px;
@@ -1116,4 +1153,31 @@ tr {
   height: 100%;
   transition-delay: 0.4s;
   color: aliceblue;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+button:focus {
+  background-color: #350545;
+  color: '#fff';
+}
+
+.navbar-toggler:focus {
+  outline: none;
+}
+
+/* Ou para garantir que seja removido em todos os estados */
+.navbar-toggler {
+  outline: none;
+}
+
+:root {
+  --bs-navbar-toggler-border-color: #fff !important; /* Altera a cor da borda para azul */
+}
+
+.navbar-toggler {
+  border-color: #fff !important; /* Ajusta para a cor desejada, usando !important para garantir a aplicação */
+  border: #fff !important;
 }

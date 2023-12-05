@@ -342,7 +342,7 @@ document.addEventListener('DOMContentLoaded', function() {
   flatpickr("#date", {
       enableTime: true,
       dateFormat: "d/m/Y H:i",
-      "locale": "pt" ,
+      
       position: "auto center",
   });
 });
