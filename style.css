@@ -23,7 +23,9 @@ body {
   padding: 0;
 }
 .row {
-  margin: 20px;
+  margin: 0px;
+  display: flex;
+  flex-wrap: nowrap;
 }
 .navbar {
   background: var(--nav);
@@ -44,6 +46,11 @@ body {
 }
 .navbar-mainbg {
   padding: 0px;
+}
+
+.nav-item {
+  list-style-type: none; /* Remove marcadores de lista */
+  padding: 20px; /* Adiciona um pouco de preenchimento */
 }
 
 .nav-link {
@@ -91,17 +98,67 @@ body {
 .main {
   padding: 4rem 2rem;
 }
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
 .main-content h1 {
   font-family: 'Ubuntu Mono', sans-serif;
-  font-size: 5vw;
+  font-size: 4rem;
   font-weight: 700;
   text-transform: uppercase;
   color: #350545;
   text-shadow: 3px 3px 5px #fff, -3px -3px 5px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
-.main-content p {
+
+.destaque-pq-titulo {
+  font-family: 'Ubuntu Mono', sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+  text-transform: none;
   color: #792990;
+  text-shadow: 3px 3px 5px #fff, -3px -3px 5px rgba(0, 0, 0, 0.3);
+  margin-top: -30px;
 }
+.subtitulo {
+  text-transform: none;
+  font-size: 2rem;
+  color: #ffb937;
+  line-height: 2rem;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+.negrito {
+  color: #350545;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1rem;
+}
+
+.main-content p {
+  width: 50%;
+  color: #792990;
+  margin-left: 0;
+  padding-left: 0;
+  line-height: 1.5rem;
+  font-size: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.row p:first-child {
+  border-right: 1px solid #cccccc; /* Linha vertical sutil */
+  padding-right: 1rem; /* Espaço à direita do conteúdo */
+  margin-right: 1rem; /* Espaço adicional antes da linha */
+  box-sizing: border-box;
+}
+
 @media screen and (min-width: 768px) {
   .main-content h1 {
     font-size: 4vw;
@@ -203,6 +260,28 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .row {
+    flex-wrap: wrap;
+  }
+  .main-content p {
+    width: 100%;
+    color: #792990;
+    margin-left: 0;
+    padding-left: 0;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .row p:first-child {
+    border-right: none;
+    padding-right: 0;
+    margin-right: 0;
+  }
+  .destaque-pq-titulo {
+    font-size: 2rem;
+    margin-top: -10px;
   }
 }
 
